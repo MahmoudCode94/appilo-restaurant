@@ -60,7 +60,7 @@ i{
     color: var(--color-primary);
 }
 .container{
-    max-width: 330px;
+    max-width: 335px;
     margin: 0 auto;
 }
 .pad-y{
@@ -69,9 +69,14 @@ i{
 .pad-x{
     padding-bottom:30px;
 }
-
+ul{
+    list-style: none;
+}
 .w-100{
     width: 100%;
+}
+svg{
+    fill: var(--color-primary);
 }
 /* -----------------------------header--------------------------------------- */
 /* -------------nav--------------- */
@@ -159,7 +164,6 @@ nav a{
 }
 .features ul svg{
     width: 80px;
-    fill: var(--color-primary);
     transition: all .6s;
 }
 .features ul h3{
@@ -292,9 +296,6 @@ nav a{
     display: flex;
     flex-direction: column;
 }
-.item ul{
-    list-style: none;
-}
 .item li{
     margin: 20px 0;
 }
@@ -336,5 +337,91 @@ nav a{
 .price span{
     font-size: var(--fs-16);
     font-weight: var(--fw-700);
+    color: var(--color-primary);
+}
+/* ------------------end of special------------------------------ */
+/* ------------------start of intro------------------------------ */
+.intro{
+    height: 56vh;
+    overflow: hidden;
+    position: relative;
+}
+.intro .video{
+    height: 100%;
+    background-image: url(../images/imgi_58_d1.jpg);
+    transition: all .4s;
+}
+.intro:hover .video{
+    transform: scale(1.1);
+        cursor: pointer;
+}
+.intro::after{
+    content: url(../images/imgi_11_v-play.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+/* ------------------end of intro------------------------------ */
+/* ------------------start of contact------------------------------ */
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact-top{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.location{
+    background-color: var(--bg-color-2);
+    width: 90%;
+    margin: auto;
+    padding: 80px 0;
+    line-height: 1.3rem;
+}
+.location svg{
+    width: 90px;
+}
+.location p{
+    font-size: var(--fs-16);
+    color: #acb8bb;
+}
+.contact-img img{
+width: 100%;
+}
+.opening{
+    line-height: 1.5rem;
+    padding: 60px 50px;
+    background-color: var(--color-primary);
+}
+.opening li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.opening li h5{
+    font-size: var(--fs-16);
+    font-family: "google sans";
+    font-weight: 600;
+}
+
+.contact-bottom{
+    background-color: var(--card-color);
+    margin: auto;
+    padding: 60px 50px;
+}
+.contact-bottom svg{
+    width: 90px;
+}
+.contact-bottom h5{
+    color: var(--color-primary);
+}
+.contact-bottom h2{
+    font-size: var(--fs-24);
+}
+.contact-bottom a h2{
     color: var(--color-primary);
 }
