@@ -141,23 +141,6 @@ nav a{
     font-weight: var(--fw-700);
     padding: 12px 26px;
 }
-.switches{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-.switches i{
-    font-size: var(--fs-14);
-    padding: 12px;
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    color: black;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 /* --------------end of header----------------------------- */
 /* --------------start of features--------------------------- */
 .features ul li{
